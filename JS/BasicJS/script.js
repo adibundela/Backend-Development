@@ -52,28 +52,39 @@
 
   /////////  Promisessss
    
-    function connectToServer(){
-          console.log("connecting to server...");
-          return new Promise((resolve,reject)=>{
-            setTimeout(() => {
-                resolve("connected");
-            }, 2000);
+    // function connectToServer(){
+    //       console.log("connecting to server...");
+    //       return new Promise((resolve,reject)=>{
+    //         setTimeout(() => {
+    //             resolve("connected");
+    //         }, 2000);
 
-          })
-    }
+    //       })
+    // }
 
-    function fetchCourses(){
-        return new Promise((resolve,reject)=>{
-            console.log("Fetching courses...");
-            setTimeout(() => {
-                resolve(["course1", "coure2", "course3"]);
-            }, 2000);
+    // function fetchCourses(){
+    //     return new Promise((resolve,reject)=>{
+    //         console.log("Fetching courses...");
+    //         setTimeout(() => {
+    //             resolve(["course1", "coure2", "course3"]);
+    //         }, 2000);
 
-        })
-    }
-    connectToServer().then((Response)=>{
-        console.log(Response);
-        return fetchCourses()
-    }).then((response)=>{
-        console.log(response);
-    })
+    //     })
+    // }
+    // connectToServer().then((Response)=>{
+    //     console.log(Response);
+    //     return fetchCourses()
+    // }).then((response)=>{
+    //     console.log(response);
+    // })
+
+
+ //////   /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ ///     Import Export  /////
+
+   var  a = 2;
+   // now we want to export this variable
+  
+
