@@ -111,8 +111,7 @@ const app = express()
         //       EJS 
         
         app.set('view engine', 'ejs')
-        app.use(express.json())
-        app.use(express.urlencoded({extended:true}))
+       
 
         app.get('/',(req,res)=>{
             res.render('index')
@@ -120,6 +119,13 @@ const app = express()
         app.get('/check',(req,res)=>{
             console.log(req.query);
             res.send(req.query)
+        })
+        app.use(express.json())
+        app.use(express.urlencoded({extended:true}))
+        // to handle form with post request
+        app.post('/checkPost',(req,res)=>{
+            console.log(req.body);
+            res.send(req.body)
         })
 
 
